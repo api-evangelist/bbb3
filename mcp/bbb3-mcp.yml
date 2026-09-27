@@ -1,0 +1,8 @@
+generated: '2026-09-27'
+method: searched
+source: https://www.bb3advertising.com/llms.txt
+deployment:
+  mode: remote
+  endpoint: https://www.bb3advertising.com/_api/mcp
+  auth: unknown
+  verified: searched

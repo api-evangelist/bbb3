@@ -1,23 +1,54 @@
 aid: bbb3
+
 name: Bbb3
-description: 'Bbb3 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bbb3 is a placeholder company identified during the API Evangelist harvest process from secondary-market sources. It currently exists as a stub entry within the network, awaiting comprehensive profiling and enrichment. No public-facing website, documentation, or API endpoints have been discovered for Bbb3 at this time, and further investigation is required to determine its actual digital presence and offerings.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bbb3/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Technology
+- Finance
+- Data
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/bbb3
+
+  - type: Hosts
+    url: hosts/bbb3-hosts.yml
+  - type: DomainSecurity
+    url: security/bbb3-domain-security.yml
+  - type: MCPServer
+    url: mcp/bbb3-mcp.yml
+  - type: Vendors
+    url: vendors/bbb3-vendors.yml
+  - type: Website
+    url: https://equityzen.com/company/bbb3
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
